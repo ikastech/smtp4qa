@@ -1,11 +1,11 @@
 smtp4qa
 =======
 smtp4qa provides a option to store the email file (.eml) to the folder which is configurable.
-Select Rnwood.Smtp4dev prject and Config the App.config:
- <appSettings>
+Select Rnwood.Smtp4dev prject and Config the App.config- appsettings:
+ 
     <add key="EmailFolderPath" value="ADD YOUR DIRECTORY"/>
     <add key="EmailShowInGrid" value="1"/><!--Display 0-False save in folder,1-True doesn't save folder-->
-  </appSettings>
+ 
 
 The saved email are can view in the web page by setting up the default.aspx folder path.
 
