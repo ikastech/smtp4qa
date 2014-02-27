@@ -1,0 +1,11 @@
+2_21_2014_11_24_10
+
+task()
+funtion task()
+{
+
+take photo
+
+if(true)
+	setinterval()
+}
