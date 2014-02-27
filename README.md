@@ -12,4 +12,4 @@ The saved email are can view in the web page by setting up the default.aspx fold
 Config in default page  
 static string EmailFolderPath = @"ADD YOUR DIRECTORY";<!--Add EmailFolderPath value which provide in the app.config-->
 
-The saved .eml files can be viewed from browser without downloading .eml file, easy for QA team to check the emails without sending.
+The saved .eml files can be viewed from browser without downloading .eml file, easy for QA team to check the emails without sending.There is option to filter the email by date.
