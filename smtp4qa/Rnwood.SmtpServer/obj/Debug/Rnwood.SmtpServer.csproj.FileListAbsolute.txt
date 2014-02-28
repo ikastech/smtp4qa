@@ -1,0 +1,6 @@
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.SmtpServer\bin\Debug\Rnwood.SmtpServer.XML
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.SmtpServer\bin\Debug\Rnwood.SmtpServer.dll
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.SmtpServer\bin\Debug\Rnwood.SmtpServer.pdb
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.SmtpServer\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.SmtpServer\obj\Debug\Rnwood.SmtpServer.dll
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.SmtpServer\obj\Debug\Rnwood.SmtpServer.pdb

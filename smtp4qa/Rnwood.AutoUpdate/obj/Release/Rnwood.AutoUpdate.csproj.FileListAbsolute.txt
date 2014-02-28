@@ -1,0 +1,8 @@
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.AutoUpdate\bin\Release\Rnwood.AutoUpdate.dll
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.AutoUpdate\bin\Release\Rnwood.AutoUpdate.pdb
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.AutoUpdate\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.AutoUpdate\obj\Release\Rnwood.AutoUpdate.Properties.Resources.resources
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.AutoUpdate\obj\Release\Rnwood.AutoUpdate.UpdateAvailableForm.resources
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.AutoUpdate\obj\Release\Rnwood.AutoUpdate.csproj.GenerateResource.Cache
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.AutoUpdate\obj\Release\Rnwood.AutoUpdate.dll
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.AutoUpdate\obj\Release\Rnwood.AutoUpdate.pdb

@@ -1,0 +1,5 @@
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.SmtpServer\bin\Release\Rnwood.SmtpServer.dll
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.SmtpServer\bin\Release\Rnwood.SmtpServer.pdb
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.SmtpServer\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.SmtpServer\obj\Release\Rnwood.SmtpServer.dll
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.SmtpServer\obj\Release\Rnwood.SmtpServer.pdb
