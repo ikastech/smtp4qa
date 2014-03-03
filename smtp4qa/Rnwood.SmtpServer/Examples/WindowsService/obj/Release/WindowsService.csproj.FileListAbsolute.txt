@@ -1,0 +1,9 @@
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\WindowsService\bin\Release\WindowsService.exe
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\WindowsService\bin\Release\WindowsService.pdb
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\WindowsService\bin\Release\Rnwood.SmtpServer.dll
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\WindowsService\bin\Release\Rnwood.SmtpServer.pdb
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\WindowsService\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\WindowsService\obj\Release\WindowsService.ProjectInstaller.resources
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\WindowsService\obj\Release\WindowsService.csproj.GenerateResource.Cache
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\WindowsService\obj\Release\WindowsService.exe
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\WindowsService\obj\Release\WindowsService.pdb

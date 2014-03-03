@@ -1,0 +1,5 @@
+D:\Projects\smtp4qa\Smtp4qa\bin\Smtp4qa.dll
+D:\Projects\smtp4qa\Smtp4qa\bin\Smtp4qa.pdb
+D:\Projects\smtp4qa\Smtp4qa\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\smtp4qa\Smtp4qa\obj\Release\Smtp4qa.dll
+D:\Projects\smtp4qa\Smtp4qa\obj\Release\Smtp4qa.pdb

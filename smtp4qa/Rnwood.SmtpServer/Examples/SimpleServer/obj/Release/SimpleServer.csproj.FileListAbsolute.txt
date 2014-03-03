@@ -1,0 +1,7 @@
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\SimpleServer\bin\Release\SimpleServer.exe
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\SimpleServer\bin\Release\SimpleServer.pdb
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\SimpleServer\bin\Release\Rnwood.SmtpServer.dll
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\SimpleServer\bin\Release\Rnwood.SmtpServer.pdb
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\SimpleServer\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\SimpleServer\obj\Release\SimpleServer.exe
+D:\Projects\smtp4qa\Rnwood.SmtpServer\Examples\SimpleServer\obj\Release\SimpleServer.pdb

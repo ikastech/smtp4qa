@@ -1,0 +1,2 @@
+D:\Projects\smtp4dev-2.0.9-source\Rnwood.SmtpServer.Tests\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\smtp4qa\Rnwood.SmtpServer.Tests\obj\Debug\ResolveAssemblyReference.cache
