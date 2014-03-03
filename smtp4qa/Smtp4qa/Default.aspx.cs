@@ -48,11 +48,11 @@ namespace Smtp4qa
 
             DirectoryInfo info = new DirectoryInfo(EmailFolderPath);
 
-            files = info.GetFiles("*.eml").OrderBy(p => p.CreationTimeUtc).ToArray();
+            files = info.GetFiles("*.eml").OrderByDescending(p => p.CreationTime).ToArray();
 
 
-            IComparer fileComparer = new CompareFileByDate();
-            Array.Sort(files, fileComparer);
+            //IComparer fileComparer = new CompareFileByDate();
+           // Array.Sort(files, fileComparer);
 
 
             lblSelectCal.Text = "List of email date is " + ChoosenDate.ToString();
