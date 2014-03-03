@@ -25,32 +25,36 @@ namespace Smtp4qa
 
         public class CompareFileByDate : IComparer
         {
-            int IComparer.Compare(Object a, Object b)
+            int IComparer.Compare(object a, object b)
             {
-                System.IO.FileInfo fia = new System.IO.FileInfo((string)a);
-                System.IO.FileInfo fib = new System.IO.FileInfo((string)b);
+                System.IO.FileInfo fia = new System.IO.FileInfo(a.ToString());
+                System.IO.FileInfo fib = new System.IO.FileInfo(b.ToString());
 
                 DateTime cta = fia.CreationTime;
-                DateTime ctb = fib.CreationTime;
+                DateTime ctb = fia.CreationTime;
 
                 return DateTime.Compare(ctb, cta);
             }
         }
-      
+
         protected void Page_Load(object source, EventArgs e)
         {
-            if (showCalendar)
-            { Calendar1.Visible = true; }
-            else
-            { Calendar1.Visible = false; }
+            //if (showCalendar)
+            //{ Calendar1.Visible = true; }
+            //else
+            //{ Calendar1.Visible = false; }
 
-            //IComparer fileComparer = new CompareFileByDate();
-            //Array.Sort(files, fileComparer);
+
 
             DirectoryInfo info = new DirectoryInfo(EmailFolderPath);
 
-            files = info.GetFiles("*.eml").OrderBy(p => p.CreationTime).ToArray();
-            
+            files = info.GetFiles("*.eml").OrderBy(p => p.CreationTimeUtc).ToArray();
+
+
+            IComparer fileComparer = new CompareFileByDate();
+            Array.Sort(files, fileComparer);
+
+
             lblSelectCal.Text = "List of email date is " + ChoosenDate.ToString();
 
             if (Request.QueryString["email"] == null)
