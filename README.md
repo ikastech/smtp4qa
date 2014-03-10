@@ -2,7 +2,7 @@ smtp4qa
 =======
 
 Smtp4qaService provides a option to store the email file (.eml) to the folder which is configurable.
-Select Smtp4qaServices prject and Config the App.config- appsettings:
+Select Smtp4qaServices project and Config the App.config- appsettings:
  
     <add key="EmailFolderPath" value="ADD YOUR DIRECTORY"/>
     
