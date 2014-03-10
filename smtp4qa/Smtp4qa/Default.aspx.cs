@@ -380,11 +380,11 @@ namespace Smtp4qa
                 {
                     if (emailTime.Year == requestTime.Year)
                     {
-                        return resTime = emailTime.Date.ToString("dd/MMM");
+                        return resTime = emailTime.Date.ToString("dd MMM");
                     }
                     else
                     {
-                        return resTime = emailTime.Date.ToString("dd/MMM/yyyy");
+                        return resTime = emailTime.Date.ToString("dd MMM yyyy");
                     }
                 }
                 else
