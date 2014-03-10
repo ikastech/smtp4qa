@@ -12,6 +12,7 @@ using glib.Email;
 using System.Net.Mail;
 using System.Configuration;
 using System.Data;
+using System.Web.UI.HtmlControls;
 
 
 namespace Smtp4qa
@@ -368,6 +369,35 @@ namespace Smtp4qa
             Page.Title ="["+dt.Rows.Count+"] "+ today.ToShortDateString();
             LoadList(dt);
         }
+        protected void Repeater_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        {
+            Repeater rptDemo = sender as Repeater; // Get the Repeater control object.
+
+            // If the Repeater contains no data.
+            if (rptMailList != null && rptMailList.Items.Count < 1)
+            {
+                if (e.Item.ItemType == ListItemType.Footer)
+                {
+                    // Show the Error Label (if no data is present).
+                    Label lblStatus = e.Item.FindControl("lblStatus") as Label;
+                    HtmlGenericControl divControl = e.Item.FindControl("divStatus") as HtmlGenericControl;
+                    divControl.Attributes["class"] = "rptEmptyMsg";
+                    if (lblStatus != null)
+                    {
+                        lblStatus.Visible = true;
+                    }
+                }
+            }
+            else
+            {
+                if (e.Item.ItemType == ListItemType.Footer)
+                {
+                    HtmlGenericControl divControl = e.Item.FindControl("divStatus") as HtmlGenericControl;
+                    divControl.Attributes["class"] = "";
+                }
+            }
+        }
+
         protected string RealTimeCalcultation(DateTime emailTime)
         {
             DateTime postTime = emailTime;
@@ -401,22 +431,22 @@ namespace Smtp4qa
         }
         protected void LoadList(System.Collections.Generic.List<string> fileList)
         {
-            rpt.DataSource = fileList;
-            rpt.DataBind();
+            rptMailList.DataSource = fileList;
+            rptMailList.DataBind();
             divDetails.Style.Add("display", "none");
             divList.Style.Remove("display");
         }
         protected void LoadList(DataTable fileList)
         {
-            rpt.DataSource = fileList;
-            rpt.DataBind();
+            rptMailList.DataSource = fileList;
+            rptMailList.DataBind();
             divDetails.Style.Add("display", "none");
             divList.Style.Remove("display");
         }
         protected void LoadList(string[] fileList)
         {
-            rpt.DataSource = fileList;
-            rpt.DataBind();
+            rptMailList.DataSource = fileList;
+            rptMailList.DataBind();
             divDetails.Style.Add("display", "none");
             divList.Style.Remove("display");
         }

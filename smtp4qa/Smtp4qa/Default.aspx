@@ -33,6 +33,15 @@ background-color: white;
 background-position: right center;
 cursor: pointer; 
    }
+   .rptEmptyMsg
+   {
+    border-width: thin; 
+    text-align: center; 
+    padding: 50px; 
+    border-right-style: solid; 
+    border-bottom-style: solid; 
+    border-left-style: solid;
+   }
     </style>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -74,7 +83,7 @@ cursor: pointer;
               </tr>
               
           </table>
-        <asp:Repeater ID="rpt" runat="server">
+        <asp:Repeater ID="rptMailList" runat="server" OnItemDataBound="Repeater_ItemDataBound">
         <HeaderTemplate>
        &nbsp;<table border="1" cellspacing="0.5" cellpadding="5">
         <thead class="tHeader" >
@@ -104,7 +113,11 @@ cursor: pointer;
            
             <FooterTemplate>
             </table>
+                <div id="divStatus"  runat="server">
+                <asp:Label ID="lblStatus"  runat="server" Visible="false" Text="Emails Not Found"></asp:Label>
+                </div>
             </FooterTemplate>
+            
         </asp:Repeater>
     </div>
     
