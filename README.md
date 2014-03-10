@@ -17,7 +17,7 @@ Install the Smtp4qaServices to your machine by following steps:
 
 Now saved email are can view in the web page by setting up the Web.Config for folder path.
 
-static string EmailFolderPath = @"ADD YOUR DIRECTORY";<!--Add EmailFolderPath value which provide in the app.config-->
+ <add key="EmailFolderPath" value="ADD YOUR DIRECTORY" /> <!--Add EmailFolderPath value which provide in the app.config-->
 
 The saved .eml files can be viewed from browser without downloading .eml file, easy for QA team to check the emails without sending.There is option to filter the email by date.
 
