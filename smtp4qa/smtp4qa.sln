@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsService", "Rnwood.Sm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smtp4qa", "Smtp4qa\Smtp4qa.csproj", "{7841DB50-6F30-4469-AB28-A0D798CF9AE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smtp4qaService", "Smtp4qaService\Smtp4qaService.csproj", "{9A7A3F47-D60F-4B08-9C23-525195B3E172}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = smtp4dev.vsmdi
@@ -112,6 +114,16 @@ Global
 		{7841DB50-6F30-4469-AB28-A0D798CF9AE2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{7841DB50-6F30-4469-AB28-A0D798CF9AE2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{7841DB50-6F30-4469-AB28-A0D798CF9AE2}.Release|x86.ActiveCfg = Release|Any CPU
+		{9A7A3F47-D60F-4B08-9C23-525195B3E172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A7A3F47-D60F-4B08-9C23-525195B3E172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A7A3F47-D60F-4B08-9C23-525195B3E172}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9A7A3F47-D60F-4B08-9C23-525195B3E172}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9A7A3F47-D60F-4B08-9C23-525195B3E172}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9A7A3F47-D60F-4B08-9C23-525195B3E172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A7A3F47-D60F-4B08-9C23-525195B3E172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A7A3F47-D60F-4B08-9C23-525195B3E172}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9A7A3F47-D60F-4B08-9C23-525195B3E172}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9A7A3F47-D60F-4B08-9C23-525195B3E172}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
