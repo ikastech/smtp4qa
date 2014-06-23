@@ -265,8 +265,17 @@ namespace Smtp4qa
                         string fc = sr.ReadLine();
                         if (fc.ToString().Contains("From: "))
                         {
-                            _from = Regex.Matches(fc, "<(.+)>")[0].ToString();
-                            em.From = _from.Replace("From:", "").Replace("<", "").Replace(">", "");
+                            if (fc.Contains("<"))
+                            {
+                                _from = Regex.Matches(fc, "<(.+)>")[0].ToString();
+                                em.From = _from.Replace("From:", "").Replace("<", "").Replace(">", "");
+                            }
+                            else
+                            {
+                                string temp = fc.ToString().Replace("<", "").Replace(">", "");
+                                _from = Regex.Matches(temp, "(.+)")[0].ToString();
+                                em.From = _from.Replace("From:", "").Replace("<", "").Replace(">", "");
+                            }
                         }
                         if (fc.ToString().Contains("To: "))
                         {
