@@ -42,6 +42,11 @@ namespace Smtp4qa
 
         protected void Page_Load(object source, EventArgs e)
         {
+            PageLoad();
+        }
+
+        private void PageLoad()
+        {
             DirectoryInfo info = new DirectoryInfo(EmailFolderPath);
 
             files = info.GetFiles("*.eml").OrderByDescending(p => p.CreationTime).ToArray();
@@ -567,6 +572,11 @@ namespace Smtp4qa
             txtDate.Text = NextDate.ToString("dd MMM yyyy");
             SetDates(NextDate);
             lblError.Visible = false;
+        }
+
+        protected void imgBtnRefresh_Click(object sender, ImageClickEventArgs e)
+        {
+            PageLoad();
         }
 
         

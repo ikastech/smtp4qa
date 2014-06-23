@@ -73,6 +73,9 @@ cursor: pointer;
                   
                   <td style="width: 40%; text-align: right;">
                       <asp:Label ID="lblError" Visible="false" runat="server" Text="Invalid date" ForeColor="Red"></asp:Label>   
+                      <asp:ImageButton ID="imgBtnRefresh" runat="server" 
+                          style="width: 14px" ImageUrl="~/Refresh.png" 
+                          onclick="imgBtnRefresh_Click" />
                       <asp:TextBox ID="txtDate"  CssClass="cal" runat="server" AutoPostBack="True" OnTextChanged="txtDate_TextChanged" />
                    &nbsp;  &nbsp;&nbsp; <asp:LinkButton ID="lnkPrevious" runat="server" OnClick="lnkPrevious_Click">Previous</asp:LinkButton>&nbsp;
                       <asp:LinkButton ID="lnkNext" runat="server" OnClick="lnkNext_Click">Next</asp:LinkButton>

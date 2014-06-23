@@ -55,6 +55,7 @@
   <ItemGroup>
     <Content Include="calendar.gif" />
     <Content Include="Default.aspx" />
+    <Content Include="Refresh.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

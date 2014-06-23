@@ -50,6 +50,15 @@ namespace Smtp4qa {
         protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
+        /// imgBtnRefresh control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton imgBtnRefresh;
+        
+        /// <summary>
         /// txtDate control.
         /// </summary>
         /// <remarks>
