@@ -255,66 +255,72 @@ namespace Smtp4qa
                 
                 while (!sr.EndOfStream)
                 {
-                    string fc = sr.ReadLine();
-                    if (fc.ToString().Contains("From: "))
+                    try
                     {
-                        _from = Regex.Matches(fc, "<(.+)>")[0].ToString();
-                        em.From = _from.Replace("From:", "").Replace("<","").Replace(">","");
+                        string fc = sr.ReadLine();
+                        if (fc.ToString().Contains("From: "))
+                        {
+                            _from = Regex.Matches(fc, "<(.+)>")[0].ToString();
+                            em.From = _from.Replace("From:", "").Replace("<", "").Replace(">", "");
+                        }
+                        if (fc.ToString().Contains("To: "))
+                        {
+                            if (Regex.Matches(fc, "<(.+)>").Count > 0)
+                            {
+                                _to = Regex.Matches(fc, "<(.+)>")[0].ToString();
+                            }
+                            else
+                            {
+                                _to = Regex.Matches(fc, "(.+)")[0].ToString();
+                            }
+                            em.To = _to.Replace("To:", "");
+                        }
+                        if (fc.ToString().Contains("Cc: "))
+                        {
+                            if (Regex.Matches(fc, "<(.+)>").Count > 0)
+                            {
+                                _cc = Regex.Matches(fc, "<(.+)>")[0].ToString();
+                            }
+                            else
+                            {
+                                _cc = Regex.Matches(fc, "(.+)")[0].ToString();
+                            }
+                            em.Cc = _cc.Replace("Cc:", "").Replace("<", "").Replace(">", "");
+                        }
+                        if (fc.ToString().Contains("Bcc: "))
+                        {
+                            if (Regex.Matches(fc, "<(.+)>").Count > 0)
+                            {
+                                _cc = Regex.Matches(fc, "<(.+)>")[0].ToString();
+                            }
+                            else
+                            {
+                                _cc = Regex.Matches(fc, "(.+)")[0].ToString();
+                            }
+                            em.Bcc = _cc.Replace("Bcc:", "").Replace("<", "").Replace(">", "");
+                        }
+                        if (fc.ToString().Contains("Date: "))
+                        {
+                            if (Regex.Matches(fc, "<(.+)>").Count > 0)
+                            {
+                                _date = Regex.Matches(fc, "<(.+)>")[0].ToString();
+                            }
+                            else
+                            {
+                                _date = Regex.Matches(fc, "(.+)")[0].ToString();
+                            }
+                            em.Date = _date.Replace("Date:", "");
+                        }
+                        if (fc.ToString().Contains("Subject: "))
+                        {
+                            _subject = Regex.Matches(fc, "(.+)")[0].ToString();
+                            em.Subject = _subject.Replace("Subject:", "");
+                        }
                     }
-                    if (fc.ToString().Contains("To: "))
+                    catch (Exception)
                     {
-                        if (Regex.Matches(fc, "<(.+)>").Count > 0)
-                        {
-                            _to = Regex.Matches(fc, "<(.+)>")[0].ToString();
-                        }
-                        else
-                        {
-                            _to = Regex.Matches(fc, "(.+)")[0].ToString();
-                        }
-                        em.To = _to.Replace("To:", "");
+
                     }
-                    if (fc.ToString().Contains("Cc: "))
-                    {
-                        if (Regex.Matches(fc, "<(.+)>").Count > 0)
-                        {
-                            _cc = Regex.Matches(fc, "<(.+)>")[0].ToString();
-                        }
-                        else
-                        {
-                            _cc = Regex.Matches(fc, "(.+)")[0].ToString();
-                        }
-                        em.Cc = _cc.Replace("Cc:", "").Replace("<", "").Replace(">", ""); 
-                    }
-                    if (fc.ToString().Contains("Bcc: "))
-                    {
-                        if (Regex.Matches(fc, "<(.+)>").Count > 0)
-                        {
-                            _cc = Regex.Matches(fc, "<(.+)>")[0].ToString();
-                        }
-                        else
-                        {
-                            _cc = Regex.Matches(fc, "(.+)")[0].ToString();
-                        }
-                        em.Bcc = _cc.Replace("Bcc:", "").Replace("<", "").Replace(">", ""); 
-                    }
-                    if (fc.ToString().Contains("Date: "))
-                    {
-                        if (Regex.Matches(fc, "<(.+)>").Count > 0)
-                        {
-                            _date = Regex.Matches(fc, "<(.+)>")[0].ToString();
-                        }
-                        else
-                        {
-                            _date = Regex.Matches(fc, "(.+)")[0].ToString();
-                        }
-                        em.Date = _date.Replace("Date:", "") ;
-                    }
-                    if (fc.ToString().Contains("Subject: "))
-                    {
-                        _subject = Regex.Matches(fc, "(.+)")[0].ToString();
-                        em.Subject = _subject.Replace("Subject:", "");
-                    }
-                    
                 }
             }
 
